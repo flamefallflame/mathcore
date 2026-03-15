@@ -12,37 +12,14 @@
         <h1>수학 문제집 온라인 서점</h1>
     </header>
 
-    <main id="product-grid">
-        <!-- 제품 카드가 여기에 동적으로 추가됩니다. -->
-    </main>
-
-    <section id="contact-form">
-        <h2>제휴 문의</h2>
-        <form action="https://formspree.io/f/xnjgbdbo" method="POST">
-            <div class="form-group">
-                <label for="company">업체명/성함</label>
-                <input type="text" id="company" name="company" required placeholder="예: 수학코어 문구">
-            </div>
-            <div class="form-group">
-                <label for="email">이메일 주소</label>
-                <input type="email" id="email" name="email" required placeholder="example@email.com">
-            </div>
-            <div class="form-group">
-                <label for="message">문의 내용</label>
-                <textarea id="message" name="message" rows="5" required placeholder="제휴하고 싶은 내용을 적어주세요."></textarea>
-            </div>
-            <button type="submit" class="submit-btn">문의하기</button>
-        </form>
-    </section>
-
     <section id="comments">
         <div id="disqus_thread"></div>
         <script>
             var disqus_config = function () {
-                this.page.url = window.location.href;  // Replace with your page's canonical URL
-                this.page.identifier = window.location.pathname; // Replace with your page's unique identifier
+                this.page.url = window.location.href;
+                this.page.identifier = window.location.pathname;
             };
-            (function() { // DON'T EDIT BELOW THIS LINE
+            (function() {
             var d = document, s = d.createElement('script');
             s.src = 'https://mathcore.disqus.com/embed.js';
             s.setAttribute('data-timestamp', +new Date());
@@ -51,6 +28,10 @@
         </script>
         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </section>
+
+    <main id="product-grid">
+        <!-- 제품 카드가 여기에 동적으로 추가됩니다. -->
+    </main>
 
     <footer>
         <p>&copy; 2023 수학 문제집 온라인 서점. All rights reserved.</p>
